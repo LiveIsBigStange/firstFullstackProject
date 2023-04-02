@@ -1,4 +1,15 @@
-<div class="toolbar" role="banner">
-  <img width="40" alt="Angular Logo" src="https://cdn.icon-icons.com/icons2/1959/PNG/256/10_122764.png" />
-  <span>Welcome</span>
-</div>
+<nav class="header">
+  <div class="welcome">
+    <img src="https://cdn-icons-png.flaticon.com/512/3638/3638017.png">
+    <h1>EcoLifestyle</h1>
+  </div>
+  <div class="links">
+    <button class="other-page">Check your energy</button>
+    <button class="other-page">Sign in/Log in</button>
+    <button class="other-page"><img width="25" src="https://cdn-icons-png.flaticon.com/512/1552/1552105.png"
+        routerLink="/home-page"></button>
+  </div>
+</nav>
+<ul>
+  <li *ngFor="let user of users">{{user.name}}</li>
+</ul>
